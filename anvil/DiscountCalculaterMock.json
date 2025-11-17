@@ -40,42 +40,5 @@
       }
     ],
     "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "discountRates",
-    "inputs": [
-      {
-        "name": "",
-        "type": "uint8",
-        "internalType": "enum IBondTypes.BondType"
-      }
-    ],
-    "outputs": [
-      {
-        "name": "",
-        "type": "uint256",
-        "internalType": "uint256"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
-    "name": "setDiscountRate",
-    "inputs": [
-      {
-        "name": "bt",
-        "type": "uint8",
-        "internalType": "enum IBondTypes.BondType"
-      },
-      {
-        "name": "_discountRate",
-        "type": "uint256",
-        "internalType": "uint256"
-      }
-    ],
-    "outputs": [],
-    "stateMutability": "nonpayable"
   }
 ]

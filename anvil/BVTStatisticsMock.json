@@ -89,19 +89,6 @@
   },
   {
     "type": "function",
-    "name": "setDynamicAPY",
-    "inputs": [
-      {
-        "name": "apy",
-        "type": "uint256",
-        "internalType": "uint256"
-      }
-    ],
-    "outputs": [],
-    "stateMutability": "nonpayable"
-  },
-  {
-    "type": "function",
     "name": "setStakedRatio",
     "inputs": [
       {
