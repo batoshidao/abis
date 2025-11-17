@@ -115,6 +115,16 @@
         "internalType": "uint256"
       },
       {
+        "name": "paymentToken",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "principal",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
         "name": "buyAt",
         "type": "uint256",
         "internalType": "uint256"
@@ -195,7 +205,7 @@
         "internalType": "address"
       },
       {
-        "name": "amount",
+        "name": "principal",
         "type": "uint256",
         "internalType": "uint256"
       },
@@ -255,6 +265,25 @@
       }
     ],
     "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "claimedRewards",
+    "inputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
   },
   {
     "type": "function",
@@ -320,6 +349,16 @@
             "internalType": "uint256"
           },
           {
+            "name": "paymentToken",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "principal",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
             "name": "buyAt",
             "type": "uint256",
             "internalType": "uint256"
@@ -340,6 +379,25 @@
             "internalType": "bool"
           }
         ]
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getClaimedRewards",
+    "inputs": [
+      {
+        "name": "bondId",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
       }
     ],
     "stateMutability": "view"
@@ -430,6 +488,25 @@
         "name": "",
         "type": "address",
         "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getUnclaimedRewards",
+    "inputs": [
+      {
+        "name": "bondId",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
       }
     ],
     "stateMutability": "view"
@@ -891,13 +968,31 @@
         "internalType": "uint256"
       },
       {
+        "name": "day",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
         "name": "receipent",
         "type": "address",
         "indexed": false,
         "internalType": "address"
       },
       {
-        "name": "totalReward",
+        "name": "reward",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "apy",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "price",
         "type": "uint256",
         "indexed": false,
         "internalType": "uint256"
@@ -1035,7 +1130,7 @@
     "name": "BVTBonds_MaxBuyAmountExceeded",
     "inputs": [
       {
-        "name": "amount",
+        "name": "principal",
         "type": "uint256",
         "internalType": "uint256"
       },
@@ -1056,6 +1151,11 @@
         "internalType": "uint256"
       }
     ]
+  },
+  {
+    "type": "error",
+    "name": "BVTBonds_NotImplemented",
+    "inputs": []
   },
   {
     "type": "error",

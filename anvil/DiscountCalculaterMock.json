@@ -27,12 +27,7 @@
         "internalType": "enum IBondTypes.BondType"
       },
       {
-        "name": "",
-        "type": "uint256",
-        "internalType": "uint256"
-      },
-      {
-        "name": "",
+        "name": "stakedRatio",
         "type": "uint256",
         "internalType": "uint256"
       }

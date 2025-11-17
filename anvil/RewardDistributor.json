@@ -263,19 +263,6 @@
   },
   {
     "type": "function",
-    "name": "distributeRatio",
-    "inputs": [],
-    "outputs": [
-      {
-        "name": "",
-        "type": "uint256",
-        "internalType": "uint256"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
     "name": "getBuyRewardClaims",
     "inputs": [
       {
@@ -390,11 +377,6 @@
         "name": "rewardsToken_",
         "type": "address",
         "internalType": "address"
-      },
-      {
-        "name": "distributeRatio_",
-        "type": "uint256",
-        "internalType": "uint256"
       },
       {
         "name": "rewardDistributor_",
@@ -566,19 +548,6 @@
         "name": "rates",
         "type": "uint256[]",
         "internalType": "uint256[]"
-      }
-    ],
-    "outputs": [],
-    "stateMutability": "nonpayable"
-  },
-  {
-    "type": "function",
-    "name": "setDistributeRatio",
-    "inputs": [
-      {
-        "name": "distributeRatio_",
-        "type": "uint256",
-        "internalType": "uint256"
       }
     ],
     "outputs": [],
