@@ -1,0 +1,944 @@
+[
+  {
+    "type": "constructor",
+    "inputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "BASIS_PERCENT",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "bexSwap",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "contract IBexSwap"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "bondDealer",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "contract IBondDealer"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "buyRewardClaims",
+    "inputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "totalAmount",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "claimedAmount",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "unlockTimestamp",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "bvtBond",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "claimBuyRewards",
+    "inputs": [
+      {
+        "name": "recipient",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "claimBuyRewardsByIndex",
+    "inputs": [
+      {
+        "name": "recipient",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "index",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "claimDirectRewards",
+    "inputs": [
+      {
+        "name": "recipient",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "bvtAmount",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "maxUsd0In",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "claimLevelRewards",
+    "inputs": [
+      {
+        "name": "recipient",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "bvtAmount",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "maxUsd0In",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "directRewardRates",
+    "inputs": [
+      {
+        "name": "",
+        "type": "uint8",
+        "internalType": "enum BondLevel"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "directRewards",
+    "inputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "totalAmount",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "claimedAmount",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "startDay",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "endDay",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "distributeDirectRewards",
+    "inputs": [
+      {
+        "name": "user",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "amount",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "distributeLevelRewards",
+    "inputs": [
+      {
+        "name": "user",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "amount",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "getBuyRewardClaims",
+    "inputs": [
+      {
+        "name": "user",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "tuple[]",
+        "internalType": "struct RewardDistributor.BuyRewardClaim[]",
+        "components": [
+          {
+            "name": "totalAmount",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "claimedAmount",
+            "type": "uint256",
+            "internalType": "uint256"
+          },
+          {
+            "name": "unlockTimestamp",
+            "type": "uint256",
+            "internalType": "uint256"
+          }
+        ]
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getBuyRewards",
+    "inputs": [
+      {
+        "name": "user",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getDirectRewards",
+    "inputs": [
+      {
+        "name": "user",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getLevelRewards",
+    "inputs": [
+      {
+        "name": "user",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "initialize",
+    "inputs": [
+      {
+        "name": "bondDealer_",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "rewardsToken_",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "rewardDistributor_",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "bvtBond_",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "usd0Token_",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "bexSwap_",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "usd0BvtPoolId_",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "initialOwner_",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "levelRewardRates",
+    "inputs": [
+      {
+        "name": "",
+        "type": "uint8",
+        "internalType": "enum BondLevel"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "levelRewards",
+    "inputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "owner",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "renounceOwnership",
+    "inputs": [],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "rewardDistributor",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "rewardsToken",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "contract IERC20"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "setBexSwap",
+    "inputs": [
+      {
+        "name": "bexSwap_",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setBondDealer",
+    "inputs": [
+      {
+        "name": "bondDealer_",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setBvtBond",
+    "inputs": [
+      {
+        "name": "bvtBond_",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setDirectRewardRates",
+    "inputs": [
+      {
+        "name": "levels",
+        "type": "uint8[]",
+        "internalType": "enum BondLevel[]"
+      },
+      {
+        "name": "rates",
+        "type": "uint256[]",
+        "internalType": "uint256[]"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setLevelRewardRates",
+    "inputs": [
+      {
+        "name": "levels",
+        "type": "uint8[]",
+        "internalType": "enum BondLevel[]"
+      },
+      {
+        "name": "rewards",
+        "type": "uint256[]",
+        "internalType": "uint256[]"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setRewardDistributor",
+    "inputs": [
+      {
+        "name": "rewardDistributor_",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setRewardsToken",
+    "inputs": [
+      {
+        "name": "rewardsToken_",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setUsd0BvtPoolId",
+    "inputs": [
+      {
+        "name": "usd0BvtPoolId_",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setUsd0Token",
+    "inputs": [
+      {
+        "name": "usd0Token_",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "transferOwnership",
+    "inputs": [
+      {
+        "name": "newOwner",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "usd0BvtPoolId",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "usd0Token",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "event",
+    "name": "BexSwapSet",
+    "inputs": [
+      {
+        "name": "bexSwap",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "BondDealerSet",
+    "inputs": [
+      {
+        "name": "bondDealer",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "BvtBondSet",
+    "inputs": [
+      {
+        "name": "bvtBond",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "DirectRewardRatesSet",
+    "inputs": [
+      {
+        "name": "level",
+        "type": "uint8",
+        "indexed": true,
+        "internalType": "enum BondLevel"
+      },
+      {
+        "name": "rate",
+        "type": "uint256",
+        "indexed": true,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "DistributeRatioSet",
+    "inputs": [
+      {
+        "name": "distributeRatio",
+        "type": "uint256",
+        "indexed": true,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "Initialized",
+    "inputs": [
+      {
+        "name": "version",
+        "type": "uint64",
+        "indexed": false,
+        "internalType": "uint64"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "LevelRewardRatesSet",
+    "inputs": [
+      {
+        "name": "level",
+        "type": "uint8",
+        "indexed": true,
+        "internalType": "enum BondLevel"
+      },
+      {
+        "name": "rewards",
+        "type": "uint256",
+        "indexed": true,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "OwnershipTransferred",
+    "inputs": [
+      {
+        "name": "previousOwner",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "newOwner",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "RewardDistributed",
+    "inputs": [
+      {
+        "name": "user",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "recipient",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "amount",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "rewardType",
+        "type": "uint8",
+        "indexed": false,
+        "internalType": "enum RewardDistributor.RewardType"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "RewardDistributorSet",
+    "inputs": [
+      {
+        "name": "rewardDistributor",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "RewardsClaimed",
+    "inputs": [
+      {
+        "name": "user",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "recipient",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "amount",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "rewardType",
+        "type": "uint8",
+        "indexed": false,
+        "internalType": "enum RewardDistributor.RewardType"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "RewardsTokenSet",
+    "inputs": [
+      {
+        "name": "rewardsToken",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "Usd0BvtPoolIdSet",
+    "inputs": [
+      {
+        "name": "usd0BvtPoolId",
+        "type": "bytes32",
+        "indexed": true,
+        "internalType": "bytes32"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "Usd0TokenSet",
+    "inputs": [
+      {
+        "name": "usd0Token",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "error",
+    "name": "InvalidInitialization",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "NotInitializing",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "OwnableInvalidOwner",
+    "inputs": [
+      {
+        "name": "owner",
+        "type": "address",
+        "internalType": "address"
+      }
+    ]
+  },
+  {
+    "type": "error",
+    "name": "OwnableUnauthorizedAccount",
+    "inputs": [
+      {
+        "name": "account",
+        "type": "address",
+        "internalType": "address"
+      }
+    ]
+  },
+  {
+    "type": "error",
+    "name": "SafeERC20FailedOperation",
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "internalType": "address"
+      }
+    ]
+  }
+]
