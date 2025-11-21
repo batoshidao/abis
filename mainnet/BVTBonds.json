@@ -632,24 +632,6 @@
   },
   {
     "type": "function",
-    "name": "modifyBond",
-    "inputs": [
-      {
-        "name": "bondId",
-        "type": "uint256",
-        "internalType": "uint256"
-      },
-      {
-        "name": "dayOffset",
-        "type": "uint256",
-        "internalType": "uint256"
-      }
-    ],
-    "outputs": [],
-    "stateMutability": "nonpayable"
-  },
-  {
-    "type": "function",
     "name": "owner",
     "inputs": [],
     "outputs": [
@@ -1011,6 +993,12 @@
       },
       {
         "name": "sbvtAmount",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "discountRate",
         "type": "uint256",
         "indexed": false,
         "internalType": "uint256"
